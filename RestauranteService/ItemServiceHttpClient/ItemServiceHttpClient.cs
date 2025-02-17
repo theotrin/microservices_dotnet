@@ -11,11 +11,14 @@ namespace RestauranteService.ItemServiceHttpClient
     public class ItemServiceHttpClient : IItemServiceHttpClient
     {
         private readonly HttpClient _client;
-        public ItemServiceHttpClient(HttpClient client)
+        private readonly IConfiguration _configuration;
+        public ItemServiceHttpClient(HttpClient client, IConfiguration configuration)
         {
             _client = client;
+            _configuration = configuration;
         }
-        public void EnviaRestauranteParaItemService(RestauranteReadDto readDto)
+
+        public async Task EnviaRestauranteParaItemService(RestauranteReadDto readDto)
         {
            var conteudoHttp = new StringContent
            (
@@ -23,6 +26,13 @@ namespace RestauranteService.ItemServiceHttpClient
                 Encoding.UTF8,
                 "application/json"
            );
+
+           await _client.PostAsync(_configuration["ItemService"],conteudoHttp);
+        }
+
+        void IItemServiceHttpClient.EnviaRestauranteParaItemService(RestauranteReadDto readDto)
+        {
+            throw new NotImplementedException();
         }
     }
 }

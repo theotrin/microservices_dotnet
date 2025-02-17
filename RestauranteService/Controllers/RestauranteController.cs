@@ -56,7 +56,6 @@ public class RestauranteController : ControllerBase
 
         _itemServiceHttpClient.EnviaRestauranteParaItemService(restauranteReadDto);
 
-
         return CreatedAtRoute(nameof(GetRestauranteById), new { restauranteReadDto.Id }, restauranteReadDto);
     }
 }
