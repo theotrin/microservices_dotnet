@@ -18,7 +18,7 @@ namespace RestauranteService.ItemServiceHttpClient
             _configuration = configuration;
         }
 
-        public async Task EnviaRestauranteParaItemService(RestauranteReadDto readDto)
+        public async void EnviaRestauranteParaItemService(RestauranteReadDto readDto)
         {
            var conteudoHttp = new StringContent
            (
@@ -28,11 +28,6 @@ namespace RestauranteService.ItemServiceHttpClient
            );
 
            await _client.PostAsync(_configuration["ItemService"],conteudoHttp);
-        }
-
-        void IItemServiceHttpClient.EnviaRestauranteParaItemService(RestauranteReadDto readDto)
-        {
-            throw new NotImplementedException();
         }
     }
 }

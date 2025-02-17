@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "1q/gtDJrBLaGd5T4QNXtOvsMGxd+2TK6J4hoVHyLaGE=",
+  "Hash": "35uqaFKIXbSvs1vzbQmHZQ+pUI771BQ3TxrX235IXbA=",
   "Source": "ItemService",
   "BasePath": "_content/ItemService",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

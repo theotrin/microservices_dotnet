@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "zzdEshzqrAQvoDK3A4R6/nRVypW5PvVftBfXFgXQMww=",
+  "Hash": "lIbmYE4FQLAc7P7GqL9z69yl8iNZUDxZjARIIYEu15Y=",
   "Source": "RestauranteService",
   "BasePath": "_content/RestauranteService",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }
