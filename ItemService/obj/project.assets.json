@@ -4767,31 +4767,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\theop\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\19900\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\theop\\OneDrive\\Documentos\\c#\\microservices_dotnet\\ItemService\\ItemService.csproj",
+      "projectUniqueName": "c:\\Users\\19900\\Documents\\c#\\microservices_dotnet\\ItemService\\ItemService.csproj",
       "projectName": "ItemService",
-      "projectPath": "c:\\Users\\theop\\OneDrive\\Documentos\\c#\\microservices_dotnet\\ItemService\\ItemService.csproj",
-      "packagesPath": "C:\\Users\\theop\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\theop\\OneDrive\\Documentos\\c#\\microservices_dotnet\\ItemService\\obj\\",
+      "projectPath": "c:\\Users\\19900\\Documents\\c#\\microservices_dotnet\\ItemService\\ItemService.csproj",
+      "packagesPath": "C:\\Users\\19900\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\19900\\Documents\\c#\\microservices_dotnet\\ItemService\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\theop\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\19900\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4809,8 +4802,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net6.0": {
@@ -4858,6 +4850,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.32, 6.0.32]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.32, 6.0.32]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.32, 6.0.32]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.32, 6.0.32]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -4866,7 +4876,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }

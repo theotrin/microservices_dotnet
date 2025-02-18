@@ -58,4 +58,19 @@ public class RestauranteController : ControllerBase
 
         return CreatedAtRoute(nameof(GetRestauranteById), new { restauranteReadDto.Id }, restauranteReadDto);
     }
+
+    [HttpDelete ("{id}")]
+    public ActionResult DeleteRestaurante(int id)
+    {
+        var restaurante = _repository.GetRestauranteById(id);
+        if (restaurante == null)
+        {
+            return NotFound();
+        }
+
+        _repository.DeleteRestaurante(restaurante);
+        _repository.SaveChanges();
+
+        return Accepted();
+    }
 }

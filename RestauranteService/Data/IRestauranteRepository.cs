@@ -9,4 +9,5 @@ public interface IRestauranteRepository
     IEnumerable<Restaurante> GetAllRestaurantes();
     Restaurante GetRestauranteById(int id);
     void CreateRestaurante(Restaurante restaurante);
+    void DeleteRestaurante(Restaurante restaurante);
 }
