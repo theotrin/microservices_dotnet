@@ -72,5 +72,5 @@ public class RestauranteController : ControllerBase
         _repository.SaveChanges();
 
         return Accepted();
-    }
+    } 
 }
