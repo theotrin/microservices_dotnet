@@ -16,10 +16,11 @@ public class RabbitMqClient : IRabbitMqClient
         _configuration = configuration;
         _connection = new ConnectionFactory() 
         { 
-            HostName = _configuration["RabbitMq:Host"], 
+            HostName = _configuration["RabbitMqHost"], 
             Port = Int32.Parse(_configuration["RabbitMqPort"]) }.CreateConnection();
-        _channel = _connection.CreateModel();
-        _channel.ExchangeDeclare(exchange: "trigger", type: ExchangeType.Fanout);
+            _channel = _connection.CreateModel();
+            _channel.ExchangeDeclare(exchange: "trigger", type: ExchangeType.Fanout);
+            
     }
 
     public void PublicaRestaurante(RestauranteReadDto restauranteReadDto)
